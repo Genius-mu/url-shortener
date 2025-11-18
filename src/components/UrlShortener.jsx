@@ -247,11 +247,11 @@ export default function UrlShortener() {
       >
         <h1 className="text-3xl font-extrabold text-center mb-4">✨ sumpha</h1>
 
-        <div className="flex gap-3">
+        <div className="w-full flex gap-3 justify-center items-center sm:flex-row flex-col">
           <input
             type="text"
             placeholder="Paste your long URL..."
-            className="flex-1 p-3 bg-white/40 backdrop-blur-xl border border-white/50 rounded-2xl outline-none"
+            className="w-full flex-1 p-3 bg-white/40 backdrop-blur-xl border border-white/50 rounded-2xl outline-none shadow-xl"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleShorten()}
@@ -259,7 +259,7 @@ export default function UrlShortener() {
 
           <button
             onClick={handleShorten}
-            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 rounded-2xl flex items-center gap-2 shadow-md"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 rounded-2xl flex items-center gap-2 py-3 w-full text-center justify-center items-center shadow-md"
             disabled={loading}
           >
             {loading ? <Loader2 className="animate-spin w-5 h-5" /> : "Shorten"}

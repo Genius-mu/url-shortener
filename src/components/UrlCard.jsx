@@ -111,11 +111,11 @@ export default function UrlCard({ url, base, onCopy, onDelete }) {
   };
 
   return (
-    <div className="bg-white/40 backdrop-blur-xl p-4 rounded-2xl border border-white/40 shadow-md flex items-start justify-between">
+    <div className="bg-white/40 backdrop-blur-xl p-4 rounded-2xl border border-white/40 shadow-md flex items-start justify-between flex-col sm:flex-row gap-y-3">
       <div className="flex-1">
-        <p className="text-sm text-gray-800 break-all text-[11px] sm:text-[15px] max-w-[280px] sm:max-w-[350px]">{url.original_url}</p>
+        <p className="text-sm text-gray-800 break-all text-[12px] sm:text-[15px] sm:max-w-[350px]">{url.original_url}</p>
         <a
-          className="text-blue-700 font-semibold block mt-2 text-[11px] sm:text-[16px]"
+          className="text-blue-700 font-semibold block mt-2 text-[12px] sm:text-[16px]"
           href={full}
           target="_blank"
           rel="noreferrer"
@@ -128,20 +128,20 @@ export default function UrlCard({ url, base, onCopy, onDelete }) {
         </p>
       </div>
 
-      <div className="flex justify-center items-center gap-1 ml-4">
+      <div className="flex justify-center items-center gap-1 sm:ml-4">
         <div>
           <button
             onClick={() => onCopy(full)}
             className="p-2 bg-white/50 rounded-lg border mr-2"
           >
-            <Copy className="sm:w-4 sm:h-4 w-2 h-2" />
+            <Copy className="sm:w-4 sm:h-4 w-3 h-3" />
           </button>
 
           <button
             onClick={() => onDelete(url.id)}
             className="p-2 bg-white/50 rounded-lg border mr-2"
           >
-            <Trash2 className="sm:w-4 sm:h-4 w-2 h-2" />
+            <Trash2 className="sm:w-4 sm:h-4 w-3 h-3" />
           </button>
         </div>
 
@@ -153,7 +153,7 @@ export default function UrlCard({ url, base, onCopy, onDelete }) {
             }}
             className="p-2 bg-white/50 rounded-lg border"
           >
-            <QrCode className="sm:w-4 sm:h-4 w-2 h-2" />
+            <QrCode className="sm:w-4 sm:h-4 w-3 h-3" />
           </button>
 
           <div id={`qr-box-${url.id}`} className="hidden mt-2">
@@ -162,7 +162,7 @@ export default function UrlCard({ url, base, onCopy, onDelete }) {
               onClick={handleDownload}
               className="mt-2 p-2 rounded-md bg-white/60 border flex items-center gap-2 text-sm"
             >
-              <Download className="sm:w-4 sm:h-4 w-2 h-2" /> Download
+              <Download className="sm:w-4 sm:h-4 w-3 h-3" /> Download
             </button>
           </div>
         </div>
