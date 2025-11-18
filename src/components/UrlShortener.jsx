@@ -286,7 +286,7 @@ export default function UrlShortener() {
                 onClick={() => handleCopy(shortUrl)}
                 className="p-2 rounded-lg bg-white/50 border"
               >
-                <Copy className="w-4 h-4" />
+                <Copy className="sm:w-4 sm:h-4 w-2 h-2" />
               </button>
             </div>
           </motion.div>
