@@ -1,16 +1,128 @@
-# React + Vite
+# 🌐 Sumpha URL Shortener  
+A modern, fast and beautifully designed **URL Shortener** built with **React + Django REST API**.  
+Features glassmorphism UI, QR code generation, copy-to-clipboard toasts, analytics dashboard, and smooth animations.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🚀 Features
+- 🔗 Shorten any long URL  
+- ✨ Modern glass UI  
+- 📊 Analytics Dashboard (click stats chart)  
+- 📥 QR Code generation + download  
+- 📋 Copy shortcode with toast  
+- ❌ Delete shortened links  
+- 🎨 Animated UI with Framer Motion  
+- 🧭 React Router navigation  
+- ⚡ Real-time updates (no reload needed)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### **Frontend**
+- React (Vite or CRA)
+- TailwindCSS
+- React Router
+- Axios
+- React Hot Toast
+- QRCode.react
+- Chart.js + react-chartjs-2
+- Framer Motion
+- Lucide Icons
 
-## Expanding the ESLint configuration
+### **Backend**
+- Django
+- Django REST Framework  
+- Hosted on Render
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔧 API Endpoints Used
+
+```
+POST    /api/shorturls/          → Create short URL
+GET     /api/shorturls/          → Get all URLs
+DELETE  /api/shorturls/:id/      → Delete a URL
+REDIRECT /{short_code}           → Visit shortened URL
+```
+
+**Base URL:**  
+```
+https://url-shortener-jgh8.onrender.com
+```
+
+---
+
+## 📦 Installation & Setup
+
+### 1. Clone the project  
+```sh
+git clone https://github.com/your-username/sumpha-url-shortener.git
+cd url-short
+```
+
+### 2. Install dependencies  
+```sh
+npm install
+```
+
+(or)
+
+```sh
+yarn install
+```
+
+### 3. Start development server  
+```sh
+npm run dev
+```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+│── components/
+│   ├── UrlShortener.jsx
+│   ├── UrlCard.jsx
+    ├── Dashboard.jsx
+│
+│── App.jsx
+│── main.jsx
+│── index.css
+```
+
+---
+
+## 🎯 How It Works
+
+### 👉 Shorten a URL
+- Paste URL → Click **Shorten** → Instantly get a shortcode  
+- Auto-added to the list  
+- Copy button triggers toast  
+- QR button shows a scannable code with download option  
+
+### 👉 Dashboard
+Shows:
+- Bar chart of click counts  
+- Total links  
+- Total clicks  
+- Most clicked link  
+
+---
+
+## 🧑‍💻 Contributors  
+**Frontend:** Mustapha  
+**Backend:** Sumayyah
+
+---
+
+## ⭐ Like This Project?
+If you find this useful, leave a ⭐ on the repo!
+
+---
+
+## 📄 License
+MIT License – free to modify and use.
+
