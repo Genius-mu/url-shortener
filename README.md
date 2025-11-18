@@ -1,18 +1,20 @@
-# 🌐 Sumpha URL Shortener  
+# 🌐 Sumpha URL Shortener
+
 A modern, fast and beautifully designed **URL Shortener** built with **React + Django REST API**.  
 Features glassmorphism UI, QR code generation, copy-to-clipboard toasts, analytics dashboard, and smooth animations.
 
 ---
 
 ## 🚀 Features
-- 🔗 Shorten any long URL  
-- ✨ Modern glass UI  
-- 📊 Analytics Dashboard (click stats chart)  
-- 📥 QR Code generation + download  
-- 📋 Copy shortcode with toast  
-- ❌ Delete shortened links  
-- 🎨 Animated UI with Framer Motion  
-- 🧭 React Router navigation  
+
+- 🔗 Shorten any long URL
+- ✨ Modern glass UI
+- 📊 Analytics Dashboard (click stats chart)
+- 📥 QR Code generation + download
+- 📋 Copy shortcode with toast
+- ❌ Delete shortened links
+- 🎨 Animated UI with Framer Motion
+- 🧭 React Router navigation
 - ⚡ Real-time updates (no reload needed)
 
 ---
@@ -20,6 +22,7 @@ Features glassmorphism UI, QR code generation, copy-to-clipboard toasts, analyti
 ## 🛠️ Tech Stack
 
 ### **Frontend**
+
 - React (Vite or CRA)
 - TailwindCSS
 - React Router
@@ -31,8 +34,9 @@ Features glassmorphism UI, QR code generation, copy-to-clipboard toasts, analyti
 - Lucide Icons
 
 ### **Backend**
+
 - Django
-- Django REST Framework  
+- Django REST Framework
 - Hosted on Render
 
 ---
@@ -46,7 +50,8 @@ DELETE  /api/shorturls/:id/      → Delete a URL
 REDIRECT /{short_code}           → Visit shortened URL
 ```
 
-**Base URL:**  
+**Base URL:**
+
 ```
 https://url-shortener-jgh8.onrender.com
 ```
@@ -55,13 +60,15 @@ https://url-shortener-jgh8.onrender.com
 
 ## 📦 Installation & Setup
 
-### 1. Clone the project  
+### 1. Clone the project
+
 ```sh
-git clone https://github.com/your-username/sumpha-url-shortener.git
+git clone https://github.com/Genius-mu/url-shortener.git
 cd url-short
 ```
 
-### 2. Install dependencies  
+### 2. Install dependencies
+
 ```sh
 npm install
 ```
@@ -72,7 +79,8 @@ npm install
 yarn install
 ```
 
-### 3. Start development server  
+### 3. Start development server
+
 ```sh
 npm run dev
 ```
@@ -98,31 +106,36 @@ src/
 ## 🎯 How It Works
 
 ### 👉 Shorten a URL
-- Paste URL → Click **Shorten** → Instantly get a shortcode  
-- Auto-added to the list  
-- Copy button triggers toast  
-- QR button shows a scannable code with download option  
+
+- Paste URL → Click **Shorten** → Instantly get a shortcode
+- Auto-added to the list
+- Copy button triggers toast
+- QR button shows a scannable code with download option
 
 ### 👉 Dashboard
+
 Shows:
-- Bar chart of click counts  
-- Total links  
-- Total clicks  
-- Most clicked link  
+
+- Bar chart of click counts
+- Total links
+- Total clicks
+- Most clicked link
 
 ---
 
-## 🧑‍💻 Contributors  
+## 🧑‍💻 Contributors
+
 **Frontend:** Mustapha  
 **Backend:** Sumayyah
 
 ---
 
 ## ⭐ Like This Project?
+
 If you find this useful, leave a ⭐ on the repo!
 
 ---
 
 ## 📄 License
-MIT License – free to modify and use.
 
+MIT License – free to modify and use.
